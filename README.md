@@ -94,7 +94,9 @@ systemctl status x11vnc.service
 Hình ảnh cài đặt thành công x11vnc
 
 ![Alt text](./img/x11vnc1.png)
+
 Note: port 5900 là cổng để bạn kết nối
+
 Nếu không thành công, kiểm tra lỗi bằng cách
 ```
 x11vnc -display :0
