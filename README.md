@@ -5,7 +5,7 @@ Hướng Dẫn Cài Đặt X11VNC và LightDM Trên Ubuntu
 ```
 sudo apt-get update && upgrade
 ```
-![Icon](./icon/icon-warning.png) <span style="color: #CECC8C; font-weight: bold;">Bạn cần nhập mật khẩu khi sử dụng câu lệnh ở chế độ root (sudo)</span>
+![Icon](./icon/icon-warning.png) ![Build Status](Bạn cần nhập mật khẩu khi sử dụng câu lệnh ở chế độ root (sudo))
 
 ## II. Cài đặt lightdm
 ### Thực hiện câu lệnh cài đặt lightdm
@@ -52,7 +52,7 @@ Truy cập thư mục cấu hình
 sudo nano /lib/systemd/system/x11vnc.service
 ```
 
-Sao chép đoạn code và thoi đổi 'password' bằng mật khẩu của bạn
+Sao chép đoạn code và thay đổi 'password' bằng mật khẩu của bạn
 ```
 [Unit]
 Description=x11vnc service
@@ -111,3 +111,16 @@ x11vnc -display :0
 
 Note: ở chế độ này máy tính sẽ không tự động khóa màn hình
 
+## IV. Thiết lập Network
+### 1. Mạng private 
+Nếu bạn sử dụng cùng một mạng thì đây là cách bạn có thể kết nối
+
+```
+sudo apt install net-tools -y
+ip -a
+```
+
+Hình ảnh ví dụ
+aaaaaaa
+
+Như ở đây chúng ta có thể thấy 
