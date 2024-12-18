@@ -5,7 +5,7 @@ Hướng Dẫn Cài Đặt X11VNC và LightDM Trên Ubuntu
 ```
 sudo apt-get update && upgrade
 ```
-![Icon](./icon/icon-warning.png) ![gray](Bạn cần nhập mật khẩu khi sử dụng câu lệnh ở chế độ root (sudo))
+![Icon](./icon/icon-warning.png) ạn cần nhập mật khẩu khi sử dụng câu lệnh ở chế độ root (sudo)
 
 ## II. Cài đặt lightdm
 ### Thực hiện câu lệnh cài đặt lightdm
@@ -112,15 +112,34 @@ x11vnc -display :0
 Note: ở chế độ này máy tính sẽ không tự động khóa màn hình
 
 ## IV. Thiết lập Network
-### 1. Mạng private 
+### 1. Mạng Private 
 Nếu bạn sử dụng cùng một mạng thì đây là cách bạn có thể kết nối
 
 ```
 sudo apt install net-tools -y
-ip -a
+ifconfig
 ```
 
-Hình ảnh ví dụ
-aaaaaaa
+ảnh ví dụ hiển thị của ifconfig
 
-Như ở đây chúng ta có thể thấy 
+Như ở đây chúng ta có thể thấy xxxx.xxxx.xxx.xxx là mạng private, bạn có thể sử dụng để kết nối TigerVNC, RealVnc, UltraVNC...
+
+### 2. Mạng Public
+Để có thể sử dụng được remote từ bên ngoài mạng bạn cần thiết lập cấu hình NAT cho router
+Truy cập đường dẫn cấu hình router thường là 192.168.1.1 (được ghi phía sau router)
+
+ảnh đường dẫn truy cập 
+
+> Advanced Setup &#8594; NAT
+
+ảnh set up 
+
+Local Ip Address lấy từ địa chỉ ip private phần mạng private, thiết lập các trường cần thiết như trong ảnh
+
+> Apply
+
+Như ở đây chúng ta có thể thấy xxxx.xxxx.xxx.xxx là mạng public, bạn có thể sử dụng để kết nối TigerVNC, RealVnc, UltraVNC... 
+Chúng ta cần kết nối kết hợp sử dụng port như sau
+
+---
+![Icon](./icon/icon-check.png) <span style="color: green; font-weight: bold;"> Bạn đã cài đặt thành công Unikey !</span>
