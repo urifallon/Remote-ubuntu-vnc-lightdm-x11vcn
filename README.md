@@ -5,7 +5,7 @@ Hướng Dẫn Cài Đặt X11VNC và LightDM Trên Ubuntu
 ```
 sudo apt-get update && upgrade
 ```
-![Icon](./icon/icon-warning.png) ạn cần nhập mật khẩu khi sử dụng câu lệnh ở chế độ root (sudo)
+![Icon](./icon/icon-warning.png) Bạn cần nhập mật khẩu khi sử dụng câu lệnh ở chế độ root (sudo)
 
 ## II. Cài đặt lightdm
 ### Thực hiện câu lệnh cài đặt lightdm
