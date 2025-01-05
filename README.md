@@ -135,7 +135,7 @@ Ví dụ nat cho nhà mạng VNPT:
 ![Alt text](./img/nat1.png)
 ![Alt text](./img/nat2.png)
 
-Local Ip Address lấy từ địa chỉ ip private phần mạng private, thiết lập các trường cần thiết như trong ảnh
+Thiết lập các trường cần thiết như trong ảnh
 
 > Apply
 
