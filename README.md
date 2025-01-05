@@ -120,26 +120,33 @@ sudo apt install net-tools -y
 ifconfig
 ```
 
-ảnh ví dụ hiển thị của ifconfig
+![Alt text](./img/nat.png)
 
-Như ở đây chúng ta có thể thấy xxxx.xxxx.xxx.xxx là mạng private, bạn có thể sử dụng để kết nối TigerVNC, RealVnc, UltraVNC...
+Như ở đây chúng ta có thể thấy `192.168.0.104` là mạng private, bạn có thể sử dụng để kết nối mạng nội bộ bằng TigerVNC, RealVnc, UltraVNC...
 
 ### 2. Mạng Public
 Để có thể sử dụng được remote từ bên ngoài mạng bạn cần thiết lập cấu hình NAT cho router
 Truy cập đường dẫn cấu hình router thường là 192.168.1.1 (được ghi phía sau router)
 
-ảnh đường dẫn truy cập 
+Ví dụ nat cho nhà mạng VNPT:
 
 > Advanced Setup &#8594; NAT
 
-ảnh set up 
+![Alt text](./img/nat1.png)
+![Alt text](./img/nat2.png)
 
 Local Ip Address lấy từ địa chỉ ip private phần mạng private, thiết lập các trường cần thiết như trong ảnh
 
 > Apply
 
-Như ở đây chúng ta có thể thấy xxxx.xxxx.xxx.xxx là mạng public, bạn có thể sử dụng để kết nối TigerVNC, RealVnc, UltraVNC... 
-Chúng ta cần kết nối kết hợp sử dụng port như sau
+Lấy địa chỉ mạng public của máy
+```
+curl ifconfig.me
+```
+
+Sử dụng địa chỉ mạng public để kết nối TigerVNC, RealVnc, UltraVNC... bên ngoài mạng.
+
+Kết hợp port nếu có cấu hình như sau: `yourip:port`
 
 ---
 ![Icon](./icon/icon-check.png) <span style="color: green; font-weight: bold;"> Bạn đã cài đặt thành công Unikey !</span>
